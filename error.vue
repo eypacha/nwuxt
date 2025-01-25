@@ -1,8 +1,12 @@
 <template>
-  <div class="container p-6 text-center">
-    <h1 class="font-bold text-9xl text-destructive">{{ props.error.statusCode }}</h1>
-    <h2 class="mb-4 text-2xl">{{ props.error.message }}</h2>
-    <Button @click="goToHome">Go to Home</Button>
+  <div class="container flex p-6 h-[100svh] flex-col items-center justify-center text-center">
+    <div>
+      <h1 class="font-bold text-9xl text-primary">
+        {{ props.error.statusCode }}
+      </h1>
+      <h2 class="mb-12 text-2xl">{{ props.error.message }}</h2>
+      <Button @click="goToHome">Go to Home</Button>
+    </div>
   </div>
 </template>
 
@@ -15,5 +19,5 @@ const props = defineProps({
   default: () => ({ statusCode: 500, message: "Internal Server Error" }),
 });
 
-const goToHome = () => clearError({ redirect: '/' });
+const goToHome = () => clearError({ redirect: "/" });
 </script>
