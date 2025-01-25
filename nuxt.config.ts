@@ -25,6 +25,11 @@ export default defineNuxtConfig({
     classSuffix: '',
     storage: 'localStorage',
     storageKey: 'nuxt-color-mode',
+  },
+  runtimeConfig: {
+    public: {
+      appTitle: process.env.APP_TITLE ?? 'Nwuxt',
+      apiUrl: process.env.API_URL 
+    }
   }
-
 })
