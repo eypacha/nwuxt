@@ -1,23 +1,26 @@
-# Nuxt Minimal Starter
+# Nwuxt
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Boilerplate for New Nuxt Website
+This project is a boilerplate for quickly developing web applications using Nuxt. It includes several useful modules and dependencies to get you started.
+
+## Features
+
+- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Nuxt Color Mode](https://color-mode.nuxtjs.org/)
+- [Shadcn Vue](https://www.shadcn-vue.com/)
+- [Nuxt Fonts](https://github.com/nuxt-modules/font)
+- [Nuxt Icon](https://github.com/nuxt-modules/icon)
+- [Sass](https://sass-lang.com/documentation)
+- [Pinia](https://pinia.vuejs.org/)
 
 ## Setup
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +28,19 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
 yarn dev
+```
 
-# bun
-bun run dev
+Add a new Shadcn Vue component:
+
+```bash
+yarn shadd <component>
+```
+
+Cleans up the project by removing generated files and reinstalling dependencies:
+
+```bash
+yarn reinstall
 ```
 
 ## Production
@@ -43,33 +48,17 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
 yarn build
+```
 
-# bun
-bun run build
+Generate static files:
+
+```bash
+yarn generate
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
 yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
