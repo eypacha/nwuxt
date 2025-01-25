@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'shadcn-nuxt',
     '@nuxt/icon',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@pinia/nuxt'
   ],
   tailwindcss: {
     configPath: 'tailwind.config.js',
