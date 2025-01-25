@@ -5,14 +5,14 @@ This project is a boilerplate for quickly developing web applications using Nuxt
 
 ## Features
 
-- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [Nuxt Color Mode](https://color-mode.nuxtjs.org/)
-- [Shadcn Vue](https://www.shadcn-vue.com/)
-- [Nuxt Fonts](https://github.com/nuxt-modules/font)
-- [Nuxt Icon](https://github.com/nuxt-modules/icon)
-- [Sass](https://sass-lang.com/documentation)
-- [Pinia](https://pinia.vuejs.org/)
+- [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) - Framework for Vue.js applications.
+- [Pinia](https://pinia.vuejs.org/) - State management library.
+- [Sass](https://sass-lang.com/documentation) - CSS preprocessor.
+- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework.
+- [Nuxt Color Mode](https://color-mode.nuxtjs.org/) - Dark and Light mode with auto detection.
+- [Shadcn Vue](https://www.shadcn-vue.com/) - Collection of re-usable UI components
+- [Nuxt Fonts](https://github.com/nuxt-modules/font) - Easy font management.
+- [Nuxt Icon](https://github.com/nuxt-modules/icon) - 200,000+ ready to use icons  
 
 ## Setup
 
