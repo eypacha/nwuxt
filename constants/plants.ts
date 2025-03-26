@@ -121,30 +121,6 @@ export const PLANTS: Plant[] = [
       },
     },
     {
-      name: 'Sierpinsky',
-      axiom: '-F',
-      rules: [
-        { symbol: 'F', odds: 1, newSymbolChars: '++X--F--X++' },
-        { symbol: 'X', odds: 1, newSymbolChars: '--F++X++F--L' },
-      ],
-      iterations: 7,
-      variability: 0,
-      branchs: {
-        length: 14,
-        width: 7,
-        widthFalloff: 0,
-        angle: 30,
-        color: '#0000'
-      },
-      leaves: {
-        type: 1,
-        width: 4,
-        length: 3,
-        repeat: 1,
-        color: '#0890D4'
-      },
-    },
-    {
       name: 'Snowflake',
       axiom: '[F--F--F]+[F--F--F]',
       rules: [
