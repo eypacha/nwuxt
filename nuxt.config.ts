@@ -4,8 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    'shadcn-nuxt',
     '@nuxt/icon',
     '@nuxt/fonts'
   ],
@@ -14,18 +12,6 @@ export default defineNuxtConfig({
     cssPath: 'assets/scss/main.scss',
     exposeConfig: false,
     viewer: false,
-  },
-  shadcn: {
-    prefix: '',
-    componentDir: './components/ui'
-  },
-  colorMode: {
-    preference: 'system',
-    fallback: 'light',
-    classPrefix: '',
-    classSuffix: '',
-    storage: 'localStorage',
-    storageKey: 'nuxt-color-mode',
   },
   fonts: {
     defaults: {

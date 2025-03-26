@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "reinstall": "rm -rf .nuxt dist .cache && rm -rf node_modules && yarn install && yarn dev",
-    "shadd": "npx shadcn-vue@latest add"
+    "reinstall": "rm -rf .nuxt dist .cache && rm -rf node_modules && yarn install && yarn dev"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "6.13.1",
@@ -17,8 +16,6 @@
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.474.0",
     "nuxt": "^3.15.3",
-    "radix-vue": "^1.9.12",
-    "shadcn-nuxt": "0.11.3",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "vue": "latest",
@@ -28,7 +25,6 @@
   "devDependencies": {
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.3",
-    "@nuxtjs/color-mode": "^3.5.2",
     "sass": "^1.83.4"
   }
 }
