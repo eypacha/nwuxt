@@ -3,62 +3,15 @@ import type { Ref } from 'vue';
 import { createRandom } from '../utils/random';
 import { generateLSystem, drawPlant } from '../utils/l-system';
 import { getColorFromPlant } from '../utils/colors';
-
-// Define interfaces for type safety
-interface Rule {
-  symbol: string;
-  newSymbolChars: string;
-  odds: number;
-}
-
-interface LengthConfig {
-  min: number;
-  max: number;
-}
-
-interface ColorConfig {
-  hue?: number | { min: number; max: number };
-  saturation?: number | { min: number; max: number };
-  lightness?: number | { min: number; max: number };
-  [key: string]: any;
-}
-
-// Update BranchConfig to accept string colors
-interface BranchConfig {
-  angle?: number;
-  length: number | LengthConfig;
-  widthFalloff?: number;
-  color: ColorConfig | string;
-}
-
-// Export PlantDefinition to fix the original error
-export interface PlantDefinition {
-  axiom: string;
-  rules: Rule[];
-  branchs: BranchConfig;
-  leaves: {
-    color: ColorConfig | string;
-  };
-  variability?: number;
-}
-
-interface LSystemParams {
-  axiom: string;
-  rules: Record<string, string>;
-  angle: number;
-  iterations: number;
-  initialLength: number;
-  lengthReduction: number;
-  randomness: number;
-}
-
-// Fix interface to match what createRandom actually returns
-interface RandomGenerator {
-  random: () => number;
-  // Make randomInRange optional to fix type error
-  randomInRange?: (min: number, max: number) => number;
-  [key: string]: any;
-}
+import type {
+  Rule,
+  LengthConfig,
+  ColorConfig,
+  BranchConfig,
+  PlantDefinition,
+  LSystemParams,
+  RandomGenerator
+} from '../types/plant-system';
 
 export function usePlantSystem() {
   // State

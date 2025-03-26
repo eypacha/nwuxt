@@ -1,26 +1,9 @@
-// Type definitions
-interface LSystemRules {
-  [key: string]: string;
-}
-
-interface RandomGenerator {
-  random: () => number;
-}
-
-interface LSystemParams {
-  angle: number;
-  lengthReduction: number;
-  randomness: number;
-  [key: string]: any; // For any additional params
-}
-
-interface DrawState {
-  x: number;
-  y: number;
-  angle: number;
-  length: number;
-  colorIndex: number;
-}
+import type { 
+  LSystemRules, 
+  RandomGenerator, 
+  LSystemParams, 
+  DrawState 
+} from '../types/l-system.types';
 
 // Generate L-System string after n iterations
 export function generateLSystem(

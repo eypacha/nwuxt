@@ -2,22 +2,7 @@
  * Collection of L-System parameters for different plant types
  */
 
-export interface LSystemRule {
-  predecessor: string;
-  successor: string;
-  probability?: number;
-}
-
-export interface LSystemParams {
-  name: string;
-  description?: string;
-  axiom: string;
-  rules: LSystemRule[];
-  angle: number;
-  stepSize?: number;
-  stochasticVariation?: number;
-  defaultColor?: string;
-}
+import type { LSystemRule, LSystemParams } from '../types/lSystem';
 
 // Collection of predefined plant systems
 export const plantSystems: LSystemParams[] = [
